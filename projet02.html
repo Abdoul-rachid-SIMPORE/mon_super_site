@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR7 Assistance</title>
+    <link rel="stylesheet" href="projet02.css"> </head>
+    <script src="projet02.js"></script>
+<body>
+    <header>
+        <h1>SAR7 Assistance</h1>
+        <p>Bienvenue dans SAR-C Assistance,<br>votre assistance est notre priorité.</p>
+        <img src="image/logo.png" alt="Logo de SAR7 Assistance">
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>Nos services</h2>
+            <p>Que puis-je faire pour vous ?</p>
+            <nav>
+                <a href="compte.html">Création de compte CampusFaso</a><br>
+                <a href="orientation.html">Demande d'orientation</a><br>
+                <a href="foner.html">Dépôt FONER</a><br>
+                <a href="bourse.html">Dépôt de bourse</a><br>
+                <a href="ordinateur.html">Un étudiant, un ordinateur</a><br>
+                <a href="cites.html">Dépôt des cités universitaires</a>
+            </nav>
+        </section>
+
+        <section id="inscription">
+            <h2>Identifiez-vous</h2>
+            <form action="identification.php" method="POST">
+                <label for="nom">Nom :</label><br>
+                <input id="nom" type="text" name="nom" required><br>
+
+                <label for="prenom">Prénom :</label><br>
+                <input id="prenom" type="text" name="prenom" required><br>
+
+                <label for="email">Email :</label><br>
+                <input id="email" type="email" name="email" required><br>
+
+                <h3>Votre sexe ?</h3>
+                <input id="homme" type="radio" value="homme" name="sexe">
+                <label for="homme">Homme</label><br>
+                <input id="femme" type="radio" value="femme" name="sexe">
+                <label for="femme">Femme</label>
+
+                <h3>Situation matrimoniale</h3>
+                <select name="status" id="status">
+                    <option value="celibataire">Célibataire</option>
+                    <option value="marie">Marié(e)</option>
+                    <option value="divorce">Divorcé(e)</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <br><br>
+                <button type="submit">S'inscrire</button>
+                <button type="button">Se connecter</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Expérience</a></li>
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Besoin d'aide</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <h3>Information</h3>
+            <p>&copy; 2025 SAR7 Assistance. Tous droits réservés.</p>
+            <a href="politique.html">Politique de confidentialité</a>
+        </div>
+
+        <div>
+            <h3>Suivez-nous</h3>
+            <a href="#">YouTube</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
